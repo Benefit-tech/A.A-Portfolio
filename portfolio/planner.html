@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Planner | Your Name</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html" class="logo">Your Name</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html" class="active">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="page-title">Academic Planner</h1>
+
+    <section class="planner-box">
+      <!-- Box where the user types a new task -->
+      <div class="add-task">
+        <input type="text" id="taskInput" placeholder="Enter a task, e.g. Finish COS 106 project">
+        <button class="btn" id="addButton">Add</button>
+      </div>
+
+      <!-- The list of tasks is created by JavaScript (planner.js) -->
+      <ul id="taskList"></ul>
+
+      <p id="taskCount"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Your Name. All rights reserved.</p>
+  </footer>
+
+  <script src="planner.js"></script>
+</body>
+</html>
