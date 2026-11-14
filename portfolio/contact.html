@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Your Name</title>
+  <title>Contact | Adeyemi</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
     <nav>
-      <a href="index.html" class="logo">Your Name</a>
+      <!-- EDIT: Put your first letter in the circle and your name next to it -->
+      <a href="index.html" class="logo"><span class="logo-circle">A</span> Adeyemi</a>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -22,34 +23,60 @@
   </header>
 
   <main>
-    <h1 class="page-title">Contact Me</h1>
+    <div class="page-heading">
+      <p class="label">Get in Touch</p>
+      <h1>Let's <span class="accent">Talk</span></h1>
+    </div>
 
-    <!-- novalidate turns off the browser's own checks so OUR JavaScript does the validation -->
-    <form id="contactForm" class="contact-form" novalidate>
+    <div class="contact-layout">
 
-      <label for="name">Name</label>
-      <input type="text" id="name" placeholder="Your full name">
-      <p class="error" id="nameError"></p>
+      <section class="card contact-info">
+        <h2>Contact Details</h2>
+        <p>Have a question or want to work together? Send me a message.</p>
+        <ul>
+          <li><strong>Email</strong> a.aree4326@miva.edu.ng</li>
+          <li><strong>Phone</strong> 08093839011</li>
+          <li><strong>Location</strong> Lagos, Nigeria</li>
+          <li><strong>GitHub</strong> <github class="com">
+          <Benefit-tech>Benefit-tech</Benefit-tech></li>
+        </ul>
+      </section>
 
-      <label for="email">Email Address</label>
-      <input type="text" id="email" placeholder="you@example.com">
-      <p class="error" id="emailError"></p>
+      <form id="contactForm" class="card contact-form" novalidate>
 
-      <label for="phone">Phone Number</label>
-      <input type="text" id="phone" placeholder="08012345678">
-      <p class="error" id="phoneError"></p>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your full name">
+        <p class="error" id="nameError"></p>
 
-      <label for="message">Message</label>
-      <textarea id="message" rows="5" placeholder="Type your message here"></textarea>
-      <p class="error" id="messageError"></p>
+        <label for="email">Email Address</label>
+        <input type="text" id="email" placeholder="a.aree4326@miva.edu.ng">
+        <p class="error" id="emailError"></p>
 
-      <button type="submit" class="btn">Send Message</button>
-      <p id="formMessage"></p>
-    </form>
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" placeholder="08093839011">
+        <p class="error" id="phoneError"></p>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Type your message here"></textarea>
+        <p class="error" id="messageError"></p>
+
+        <button type="submit" class="btn">Send Message</button>
+        <p id="formMessage"></p>
+      </form>
+
+    </div>
   </main>
 
   <footer>
-    <p>&copy; 2026 Your Name. All rights reserved.</p>
+    <a href="index.html" class="logo"><span class="logo-circle">A</span> Adeyemi</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html">Planner</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <p>&copy; 2026 Adeyemi. All rights reserved.</p>
   </footer>
 
   <script src="contact.js"></script>

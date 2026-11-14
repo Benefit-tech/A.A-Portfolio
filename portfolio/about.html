@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Your Name</title>
+  <title>About | Adeyemi</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
     <nav>
-      <a href="index.html" class="logo">Your Name</a>
+      <a href="index.html" class="logo"><span class="logo-circle">A</span> Adeyemi</a>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html" class="active">About</a></li>
@@ -22,12 +22,68 @@
   </header>
 
   <main>
-    <h1 class="page-title">About Me</h1>
+    <div class="page-heading">
+      <p class="label">About Me</p>
+      <h1>Get to Know <span class="accent">Me</span></h1>
+    </div>
+
+    <section class="about-intro">
+      <div class="photo-wrap">
+        <img src="images/pic.jpeg">
+      </div>
+      <div>
+        <p>
+          I am a Computer Science student who enjoys turning ideas into working
+          websites. I like learning new tools and solving problems step by step.
+        </p>
+       
+        <ul class="stats">
+          <li><strong>1</strong> Projects Built</li>
+          <li><strong>3</strong> Skills Learned</li>
+          <li><strong>1</strong> Degree in Progress</li>
+        </ul>
+        <p><strong>Listen to my introduction:</strong></p>
+       
+        <audio controls>
+          <source src="audio/intro.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS (a list). The number appears twice: in style="--percent: 90" and in the text -->
+    <section>
+      <div class="page-heading">
+        <p class="label">Technical Skills</p>
+        <h2 class="section-title">Skills That <span class="accent">Power My Work</span></h2>
+      </div>
+      <ul class="skills">
+        <li>
+          <div class="skill-circle" style="--percent: 80"><span>80%</span></div>
+          HTML5
+        </li>
+        <li>
+          <div class="skill-circle" style="--percent: 75"><span>75%</span></div>
+          CSS3
+        </li>
+        <li>
+          <div class="skill-circle" style="--percent: 60"><span>60%</span></div>
+          JavaScript
+        </li>
+        <li>
+          <div class="skill-circle" style="--percent: 75"><span>75%</span></div>
+          Microsoft Office
+        </li>
+        <li>
+          <div class="skill-circle" style="--percent: 70"><span>70%</span></div>
+          Problem Solving
+        </li>
+      </ul>
+    </section>
 
     <div class="about-grid">
 
-      <!-- EDUCATIONAL BACKGROUND (uses a table) -->
       <section class="card">
+        <p class="label">Education</p>
         <h2>Educational Background</h2>
         <table>
           <tr>
@@ -35,24 +91,17 @@
             <th>Qualification</th>
             <th>Year</th>
           </tr>
-          <!-- EDIT: Replace these rows with your real education -->
           <tr>
             <td>MIVA Open University</td>
             <td>B.Sc. Computer Science</td>
             <td>2025 - Present</td>
           </tr>
-          <tr>
-            <td>Your Secondary School</td>
-            <td>WAEC / SSCE</td>
-            <td>2019 - 2025</td>
-          </tr>
         </table>
       </section>
 
-      <!-- CAREER ASPIRATIONS -->
       <section class="card">
+        <p class="label">Future Goals</p>
         <h2>Career Aspirations</h2>
-        <!-- EDIT: Write about your career goals -->
         <p>
           I want to become a professional web developer and later grow into a
           full-stack software engineer. My goal is to build useful applications
@@ -60,23 +109,12 @@
         </p>
       </section>
 
-      <!-- TECHNICAL SKILLS (uses a list) -->
       <section class="card">
-        <h2>Technical Skills</h2>
-        <!-- EDIT: Add or remove skills -->
-        <ul>
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>JavaScript (Beginner)</li>
-          <li>Microsoft Office</li>
-          <li>Problem Solving</li>
-        </ul>
-      </section>
-
-      <!-- HOBBIES AND INTERESTS (uses a list) -->
-      <section class="card">
+        <p class="label">Free Time</p>
         <h2>Hobbies and Interests</h2>
-        <!-- EDIT: Add your real hobbies -->
+        <p>
+          In my free time, I enjoy a variety of activities that help me relax and
+          recharge. Some of my favorite hobbies include:
         <ul>
           <li>Coding and building small projects</li>
           <li>Reading</li>
@@ -84,22 +122,29 @@
           <li>Listening to music</li>
         </ul>
       </section>
+      <section class="card">
+        <p class="label">Achievements</p>
+        <h2>Academic Achievements</h2>
+        <ul>
+          <li>Completed COS 106 Introduction to Web Technologies</li>
+          <li>Built a responsive multi-page website</li>
+          <li>Learned to use GitHub</li>
+        </ul>
+      </section>
 
     </div>
-
-    <!-- MULTIMEDIA (audio) -->
-    <section>
-      <h2 class="page-title">Listen to My Introduction</h2>
-      <!-- EDIT: To use a different audio, put it in the audio folder and change the file name below -->
-      <audio controls>
-        <source src="audio/intro.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Your Name. All rights reserved.</p>
+    <a href="index.html" class="logo"><span class="logo-circle">A</span> Adeyemi</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html">Planner</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <p>&copy; 2026 Adeyemi. All rights reserved.</p>
   </footer>
 
 </body>

@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Academic Planner | Your Name</title>
+  <title>Academic Planner | Adeyemi</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
     <nav>
-      <a href="index.html" class="logo">Your Name</a>
+      <a href="index.html" class="logo"><span class="logo-circle">A</span> Adeyemi</a>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -22,24 +22,33 @@
   </header>
 
   <main>
-    <h1 class="page-title">Academic Planner</h1>
+    <div class="page-heading">
+      <p class="label">Stay Organised</p>
+      <h1>My Academic <span class="accent">Planner</span></h1>
+    </div>
 
-    <section class="planner-box">
-      <!-- Box where the user types a new task -->
+    <section class="planner-box card">
       <div class="add-task">
         <input type="text" id="taskInput" placeholder="Enter a task, e.g. Finish COS 106 project">
-        <button class="btn" id="addButton">Add</button>
-      </div>
+        <button class="btn" id="addButton">Add</button> 
 
-      <!-- The list of tasks is created by JavaScript (planner.js) -->
-      <ul id="taskList"></ul>
+      </div>
+      <ul id="taskList">  </ul>
 
       <p id="taskCount"></p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Your Name. All rights reserved.</p>
+    <a href="index.html" class="logo"><span class="logo-circle">A</span> Adeyemi</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html">Planner</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <p>&copy; 2026 Adeyemi. All rights reserved.</p>
   </footer>
 
   <script src="planner.js"></script>
